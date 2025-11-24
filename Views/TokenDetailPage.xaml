@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.TokenDetailPage"
+             Title="TokenDetailPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30" Spacing="15">
+
+            <!-- Token Image -->
+            <Image Source="{Binding ImageUrl}" 
+               WidthRequest="100" 
+               HeightRequest="100"
+               HorizontalOptions="Center" />
+
+            <!-- Token Name -->
+            <Label Text="{Binding TokenName}" 
+               FontSize="Large" 
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="10"/>
+
+            <!-- Token Price in USDT -->
+            <Label Text="{Binding TokenPriceInUSDT, StringFormat='Price in USDT: {0:N2}'}" 
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               Margin="5"/>
+
+            <!-- Token Amount -->
+            <Label Text="{Binding Amount, StringFormat='Amount: {0:N5}'}" 
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               Margin="5"/>
+
+            <!-- Equivalent Peso Value -->
+            <Label Text="{Binding USDTValue, StringFormat='Equivalent in PHP: ₱{0:F5}'}" 
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               Margin="5"/>
+
+            <!-- Receiving Address -->
+            <Label Text="Receiving Address:"
+               FontSize="Small"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="10,20,10,5"/>
+
+            <Label x:Name="UserIdLabel" 
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               WidthRequest="250"
+               Margin="0,0,0,20"/>
+
+            <!-- Button Row for Send, Receive, and Swap -->
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+
+                <!-- Send Button -->
+                <Button Text="Send" 
+                    Clicked="OnSendReceiveButtonClicked"
+                    WidthRequest="100"/>
+
+                <!-- Receive Button -->
+                <Button Text="Receive" 
+                    Clicked="OnReceiveButtonClicked"
+                    WidthRequest="100"/>
+
+                <!-- Swap Button -->
+                <Button Text="Swap" 
+                    Clicked="OnSwapButtonClicked"
+                    WidthRequest="100"/>
+
+            </HorizontalStackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

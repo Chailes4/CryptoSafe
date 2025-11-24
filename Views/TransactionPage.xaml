@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.TransactionPage"
+             Shell.TabBarIsVisible="False">
+
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Transaction History"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"/>
+
+            <!-- CollectionView to display transactions -->
+            <CollectionView x:Name="TransactionCollectionView"
+                        ItemsSource="{Binding Transactions}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnTransactionSelected">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="LightGray" Padding="10" Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding TransactionType}" 
+                                   FontSize="Small" 
+                                   FontAttributes="Italic" 
+                                   TextColor="DarkGray"/>
+                                <Label Text="{Binding TokenName}" 
+                                   FontSize="Medium" 
+                                   FontAttributes="Bold"/>
+                                <Label Text="{Binding Amount, StringFormat='Amount: ${0:N3}'}" 
+                                   FontSize="Small" />
+                                <Label Text="{Binding PriceInUSDT, StringFormat='Price (USDT): ${0:N2}'}" 
+                                   FontSize="Small" />
+                                <Label Text="{Binding Timestamp, StringFormat='Date: {0:MM/dd/yyyy HH:mm:ss}'}" 
+                                   FontSize="15" 
+                                   TextColor="Gray"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

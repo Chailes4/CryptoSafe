@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.RegisterPage"
+             Title="Sign Up">
+    
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Label Text="Email:" FontAttributes="Bold" />
+            <Entry x:Name="EmailEntry" Placeholder="Enter your email" Keyboard="Email" />
+
+            <Label Text="Password:" FontAttributes="Bold" />
+            <Entry x:Name="PasswordEntry" Placeholder="Enter your password" IsPassword="True"/>
+
+            <Label Text="Confirm Password:" FontAttributes="Bold" />
+            <Entry x:Name="ConfirmPasswordEntry" Placeholder="Confirm your password" IsPassword="True" />
+
+            <Label x:Name="MessageLabel" Text="" TextColor="Red" IsVisible="False" />
+
+            <Button Text="Create Account" Clicked="OnCreateAccountButtonClicked" />
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Do you have an account?" />
+                <Button Text="Log In" Clicked="OnLoginButtonClicked" 
+                     FontAttributes="Bold"
+                     TextColor="DodgerBlue"
+                     Padding="0"
+                     Margin="5,0,0,0"
+                     BackgroundColor="Transparent"/>
+                </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

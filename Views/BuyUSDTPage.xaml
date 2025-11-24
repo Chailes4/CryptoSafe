@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.BuyUSDTPage">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+
+
+            <!-- Label for USDT -->
+            <Label Text="USDT:" FontSize="Medium" />
+
+            <!-- Entry for USDT -->
+            <Entry x:Name="USDTEntry" 
+                Placeholder="Enter USDT" 
+                Keyboard="Numeric" 
+                TextChanged="OnUSDTAmountChanged" />
+            <Label x:Name="MinAmountLabel"
+                 Text="Minimum amount to purchase is 1 USDT"
+                  TextColor="Red"
+                  FontSize="15"
+                  HorizontalOptions="Start"
+                  IsVisible="False"/>
+
+            <!-- Label for Pesos -->
+            <Label Text="Enter Pesos Amount:" FontSize="Medium" />
+
+            <!-- Entry for Pesos -->
+            <Entry x:Name="PesoAmountEntry" 
+                Placeholder="Enter Pesos" 
+                Keyboard="Numeric" 
+                TextChanged="OnPesoAmountChanged" />
+
+            <!-- Buy Button -->
+            <Button Text="Buy USDT" 
+                 Clicked="OnBuyUSDTButtonClicked" 
+                 VerticalOptions="EndAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

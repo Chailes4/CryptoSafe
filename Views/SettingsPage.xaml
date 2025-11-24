@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.SettingsPage"
+             Shell.TabBarIsVisible="False">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Account Section -->
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="LightGray" HasShadow="True">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="send.png" WidthRequest="30" HeightRequest="30" Margin="0,0,10,0"/>
+                    <Label Text="Account" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAccountTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <!-- About Section -->
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="LightGray" HasShadow="True">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="send.png" WidthRequest="30" HeightRequest="30" Margin="0,0,10,0"/>
+                    <Label Text="About" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAboutTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <!-- Log Out Section -->
+            <Frame CornerRadius="10" Padding="15" BackgroundColor="LightGray" HasShadow="True">
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="send.png" WidthRequest="30" HeightRequest="30" Margin="0,0,10,0"/>
+                    <Label Text="Log Out" FontSize="18" VerticalOptions="Center"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLogOutTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

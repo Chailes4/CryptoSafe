@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CryptoSafe.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CryptoSafe"
+    xmlns:views="clr-namespace:CryptoSafe.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="CryptoSafe">
+
+    <ShellContent
+        Route="LoginPage" 
+        ContentTemplate="{DataTemplate views:LoginPage}"/>
+    <ShellContent
+        Route="RegisterPage" 
+        ContentTemplate="{DataTemplate views:RegisterPage}"/>
+    <ShellContent
+        Route="SendTokenPage" 
+        ContentTemplate="{DataTemplate views:SendTokenPage}"/>
+    <ShellContent
+        Route="ReceiveTokenPage" 
+        ContentTemplate="{DataTemplate views:ReceiveTokenPage}"/>
+    <ShellContent
+        Route="BuyUSDTPage" 
+        ContentTemplate="{DataTemplate views:BuyUSDTPage}"/>
+    <ShellContent
+        Route="TokenDetailPage" 
+        ContentTemplate="{DataTemplate views:TokenDetailPage}"/>
+    <ShellContent
+        Route="TransactionDetailPopup" 
+        ContentTemplate="{DataTemplate views:TransactionDetailPopup}"/>
+    <ShellContent
+        Route="TransactionPage" 
+        ContentTemplate="{DataTemplate views:TransactionPage}"/>
+    <ShellContent
+        Route="SettingsPage" 
+        ContentTemplate="{DataTemplate views:SettingsPage}"/>
+
+
+    <TabBar>
+        <ShellContent
+            Title="Swap" Route="SwapPage" Icon="swap.png"
+            ContentTemplate="{DataTemplate views:SwapPage}"/>
+        <ShellContent
+            Title="Home" Route="HomePage" Icon="wallet_nav.png"
+            ContentTemplate="{DataTemplate views:HomePage}"/>
+        <ShellContent
+            Title="Buy USDT" Route="BuyUSDTPage" Icon="buy.png"
+            ContentTemplate="{DataTemplate views:BuyUSDTPage}"/>
+    </TabBar>
+
+</Shell>

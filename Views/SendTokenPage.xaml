@@ -1,0 +1,32 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CryptoSafe.Views.SendTokenPage"
+             Shell.TabBarIsVisible="False">
+    
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <!-- Send Tokens Section -->
+            <Label Text="Send Tokens" FontAttributes="Bold" FontSize="24" />
+
+            <!-- Receiver User ID Entry -->
+            <Entry x:Name="ReceiverIdEntry" Placeholder="Receiver User ID" />
+
+            <!-- Token Name Picker -->
+            <Picker x:Name="TokenPicker" Title="Select Token" />
+
+            <!-- Amount Entry -->
+            <Entry x:Name="AmountEntry" Placeholder="Amount" Keyboard="Numeric" />
+
+            <!-- Minimum Amount Label -->
+            <Label x:Name="MinAmountLabel"
+                       Text="Minimum amount to send is 0.01"
+                       TextColor="Red"
+                       FontSize="Small"
+                       HorizontalOptions="Start"
+                       IsVisible="False" />
+            <!-- Send Tokens Button -->
+            <Button Text="Send Tokens" Clicked="OnSendTokensClicked" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

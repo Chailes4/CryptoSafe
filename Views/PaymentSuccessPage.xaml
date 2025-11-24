@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="CryptoSafe.Views.PaymentSuccessPage"
+               CanBeDismissedByTappingOutsideOfPopup="True">
+
+    <Frame
+           Padding="20"
+           BorderColor="Transparent"
+           BackgroundColor="Gray"
+           VerticalOptions="CenterAndExpand"
+           HorizontalOptions="CenterAndExpand"
+           WidthRequest="500"
+           HeightRequest="500">
+
+        <VerticalStackLayout Spacing="20"
+                             VerticalOptions="FillAndExpand"
+                             HorizontalOptions="Center">
+
+            <!-- Success Title -->
+            <Label Text="Purchase Successful!"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="Green"
+                   HorizontalOptions="Center" />
+
+            <!-- Transaction Details -->
+            <Label x:Name="USDTAmountLabel"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalOptions="Center" />
+
+                <!-- Success Icon -->
+                <Image Source="successful.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   HorizontalOptions="Center" />
+
+                    <!-- Continue Button -->
+                    <Button Text="Continue"
+                    FontSize="16"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Padding="10"
+                    Clicked="OnContinueButtonClicked"
+                    HorizontalOptions="Center"
+                    WidthRequest="200" />
+        </VerticalStackLayout>
+    </Frame>
+</toolkit:Popup>

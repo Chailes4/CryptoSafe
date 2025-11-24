@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               x:Class="CryptoSafe.Views.TransactionDetailPopup"
+               CanBeDismissedByTappingOutsideOfPopup="True">
+
+    <Frame BackgroundColor="White"
+           CornerRadius="15"
+           Padding="20"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           WidthRequest="350"
+           HeightRequest="500">
+        <ScrollView>
+            <VerticalStackLayout Spacing="10">
+                <!-- Title -->
+                <Label Text="{Binding TokenName}" 
+                       FontSize="Large" 
+                       FontAttributes="Bold" 
+                       HorizontalOptions="Center" />
+
+                <!-- Transaction Type -->
+                <Label Text="{Binding TransactionType}" 
+                       FontSize="Medium" 
+                       TextColor="DarkGray" 
+                       HorizontalOptions="Center" />
+
+                <!-- Amount -->
+                <Label Text="{Binding Amount, StringFormat='Amount: ${0:N3}'}" 
+                       FontSize="Small" 
+                       HorizontalOptions="Center" />
+
+                <!-- Gas Fee -->
+                <Label Text="{Binding GasFee, StringFormat='Gas Fee: ${0:N3}'}" 
+                       FontSize="Small" 
+                       HorizontalOptions="Center">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Buy">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <!-- Price in USDT -->
+                <Label Text="{Binding PriceInUSDT, StringFormat='Price (USDT): ${0:N2}'}" 
+                       FontSize="Small" 
+                       HorizontalOptions="Center" />
+
+                <!-- Transaction Date -->
+                <Label Text="{Binding Timestamp, StringFormat='Transaction Date: {0:MM/dd/yyyy HH:mm:ss}'}" 
+                       FontSize="Small" 
+                       TextColor="Gray" />
+
+                <!-- Sender ID -->
+                <Label Text="Sender ID:" FontAttributes="Bold">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Buy">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap To">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap From">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label Text="{Binding SenderId}">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Buy">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap To">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap From">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <!-- Receiver ID -->
+                <Label Text="Receiver ID:" FontAttributes="Bold">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Buy">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap To">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap From">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label Text="{Binding ReceiverId}">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Buy">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap To">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding TransactionType}" Value="Swap From">
+                            <Setter Property="IsVisible" Value="False" />
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+
+                <!-- Transaction ID -->
+                <Label Text="Transaction ID:" FontAttributes="Bold" />
+                <Label Text="{Binding TransactionId}" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </Frame>
+</toolkit:Popup>

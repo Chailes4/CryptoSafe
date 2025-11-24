@@ -1,0 +1,119 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CryptoSafe
+build_property.ProjectDir = C:\Users\Maegan Magtalas\source\repos\CryptoSafe\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.CsWinRTAotOptimizerEnabled = true
+build_property.CsWinRTAotExportsEnabled = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptIn = 
+build_property.CsWinRTRcwFactoryFallbackGeneratorForceOptOut = 
+build_property.CsWinRTCcwLookupTableGeneratorEnabled = true
+build_property.CsWinRTMergeReferencedActivationFactories = 
+build_property.CsWinRTAotWarningLevel = 
+build_property.CsWinRTUseWindowsUIXamlProjections = false
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/BuyUSDTPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.BuyUSDTPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BuyUSDTPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BuyUSDTPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/HomePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.HomePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/PaymentSuccessPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.PaymentSuccessPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PaymentSuccessPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PaymentSuccessPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/ReceiveTokenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.ReceiveTokenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReceiveTokenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReceiveTokenPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/RegisterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\RegisterPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/SendTokenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.SendTokenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SendTokenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SendTokenPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SettingsPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/SwapPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.SwapPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SwapPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SwapPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/TokenDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.TokenDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TokenDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TokenDetailPage.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/TransactionDetailPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.TransactionDetailPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionDetailPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionDetailPopup.xaml
+
+[C:/Users/Maegan Magtalas/source/repos/CryptoSafe/Views/TransactionPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CryptoSafe.Views.TransactionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\TransactionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\TransactionPage.xaml

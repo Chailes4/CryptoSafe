@@ -1,0 +1,1 @@
+C:\Users\Maegan Magtalas\source\repos\CryptoSafe\CryptoSafe.csproj;x64
